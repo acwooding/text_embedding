@@ -1,11 +1,15 @@
 name: text_embedding
 channels:
-  - conda-forge
+  - main
 dependencies:
   - pip
   - pip:
     - -e .
     - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.0.0/en_core_web_sm-2.0.0.tar.gz
+    - python-dotenv>=0.5.1
+    - awscli
+    - nbdime
+    - nbval
   - setuptools
   - wheel
   - flake8
